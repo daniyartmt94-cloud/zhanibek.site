@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Баланы жазу — ЖАНИБЕК</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+      background: #F7FAFC;
+      color: #2D3748;
+      padding: 20px;
+    }
+    h1 { text-align: center; }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #CBD5E0;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 15px;
+      background: #2F855A;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Баланы жазу</h1>
+
+<form name="enroll-kz" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="enroll-kz">
+  <input type="text" name="parent_name" placeholder="Ата-ананың аты-жөні" required>
+  <input type="text" name="child_name" placeholder="Баланың аты" required>
+  <input type="number" name="child_age" placeholder="Баланың жасы" required>
+  <input type="tel" name="phone" placeholder="Телефон нөмірі" required>
+  <textarea name="comment" placeholder="Пікір"></textarea>
+  <button type="submit">Өтінім жіберу</button>
+</form>
+
+<a class="back" href="index-kz.html">← Басты бетке оралу</a>
+
+</body>
+</html>
